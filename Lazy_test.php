@@ -1,6 +1,3 @@
-# lazy
-惰性求值的流式map,filter,reduce
-~~~
 <?php
 require_once __DIR__ . DIRECTORY_SEPARATOR . "Lazy.php";
 
@@ -86,4 +83,3 @@ $addOne = function($v, $x1, $x2) { return $v + $x1 + $x2;};
 echo Lazy::fromIterator($ten1)->map($addOne, $ten, $ten);
 exit;
 //*/
-~~~
